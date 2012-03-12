@@ -1,0 +1,22 @@
+name: BorderPatrol
+description: Limit player travel to configurable borders
+author: megabytes
+website: http://www.minecarts.com/
+
+main: com.minecarts.borderpatrol.BorderPatrol
+version: ${pom.version}
+softdepend: [DBPermissions]
+
+commands:
+    borderpatrol:
+        description: BorderPatrol internal plugin commands
+        aliases: [border, patrol, bp]
+        usage: /<command> reload
+        
+permissions:
+    borderpatrol.admin.reload:
+        description: Reload BorderPatrol config
+        default: op
+    borderpatrol.generic:
+        description: Generic, always true, permission to use in border configuration
+        default: true

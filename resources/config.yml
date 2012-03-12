@@ -1,0 +1,3 @@
+borders:
+  - permission: borderpatrol.generic
+    radius: 2000
